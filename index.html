@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login form</title>
+
+<style>
+   h1{
+    text-align: center;
+      width: 10em;
+    height: 3ex;
+    background-color: navy;
+    border: 2px solid navy;
+    border-radius: 10px;
+    font-weight: bold;
+    color: rgb(255, 244, 144);
+    cursor: pointer;
+}
+  h1:hover{
+ background-color: rgb(255, 244, 144);
+ border: 2px rgb(255, 244, 144)
+  }
+  body{
+    background-color:gray;
+    max-width: 40%;
+    margin: auto;
+    background-attachment: fixed;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  h1{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-align: center;
+    background-color: navy;
+    margin-inline-end: 8px;
+    margin-top: 8px;
+    border-radius: 7px;
+    color: rgb(107, 129, 255);
+  }
+  
+  main{
+    border-radius: 8px;
+    background-color: aliceblue;
+    padding: 3%;
+    margin-top: 5%;
+  }
+  input[type="submit"],input[type="reset"]{
+    background-color: rgb(255, 174, 67);
+    margin-inline-end: 8px rgb(79, 161, 255) ;
+    margin-top: 8px;
+    border-top: 3px solid rgb(188, 255, 80);
+    border-right: 3px solid rgb(188, 255, 80);
+    border-radius: 6px;
+    color: rgb(255, 0, 0);
+  }
+  a:hover{
+    color: rgb(255, 0, 0);
+  }
+  input:hover{
+    background-color: rgb(0, 255, 179);
+  }
+  h1{
+   text-align: center ;
+  }
+  a{
+    color: rgb(1, 125, 167);
+    text-decoration: none;
+  }
+  h1{
+    text-align: center;
+  }
+</style>
+</head>
+<body>
+  <main>
+<h1>Login form</h1>
+      <align="Centre">
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname" placeholder="Enter first name"><br>
+        <label for="mname">Middle name:</label><br>
+        <input type="text" placeholder="Enter middle name"><br>
+        <label for="lname">Last name:</label><br>
+  <input type="text" id="lname" name="lname" placeholder="Enter last name"><br>
+  <label for="gender"> Gender:</label>
+  <label for="Male">Male</label>
+  <input type="radio" name="male">
+  <label for="female">female</label>
+  <input type="radio" name="female">
+  <label for="Others">Others</label>
+  <input type="radio" name="Others"><br>
+  <label for="Qualification">Qualification:-</label><br>
+  <input type="checkbox" id="BSc" name="BSc" value="BSc">
+  <label for="BSc">BSc</label>
+  <input type="Checkbox" id="Bsc" name="Bsc" value="Bsc">
+  <label for="Msc">Msc</label>
+  <input type="checkbox" id="Msc" name="Msc" value="Msc">
+  <label for="Ssc">Ssc</label>
+  <input type="checkbox" id="Ssc" name="Ssc" value="Ssc">
+  <label for="Hsc">Hsc</label>
+  <input type="checkbox" id="Hsc" name="Hsc" value="Hsc">
+  <label for="others">others</label>
+  <input type="checkbox" id="others" name="others" value="others"><br>
+  <select placeholder="Birthday month">
+    <option name="" value="" style="display:none;">Birthday month</option>
+    <option name="January" value="Jan">January</option>
+    <option name="February" value="Feb">February</option>
+    <option name="March" value="Mar">March</option>
+    <option name="April" value="Apr">April</option>
+    <option name="May" value="May">May</option>
+    <option name="June" value="Jun">June</option>
+    <option name="July" value="Jul">July</option>
+    <option name="August" value="Aug">August</option>
+    <option name="September" value="Sep">September</option>
+    <option name="October" value="Oct">October</option>
+    <option name="November" value="Nov">November</option>
+    <option name="December" value="Dec">December</option><br>
+  </select><br>
+  <input type="date" name="begin" 
+  placeholder="dd-mm-yyyy" value=""
+  min="1997-01-01" max="2030-12-31"><br>
+  <label for="Adress">Adress</label>
+  <input type="Text area" id="Text area" name="Text area" placeholder="Type your text here"><br>
+  <label for="Upload your photo here"></label>
+  <input type="file" id="file" name="file"><br>
+  <label for="Photo">
+    <input type="image" id="image" name="image" placeholder="Uplod image here"><br>
+  </label>
+  <label for="email"></label>
+  <input type="email" id="email" name="email" placeholder="Enter your E mail here"><br>
+  <label for="password"></label>
+  <input type="password" id="password" name="password" placeholder="Google password"><br>
+  <label for="password"></label>
+  <input type="password" id="password" name="password" placeholder="Confirm Google password"><br>
+  Due to Sign in you agree our <a href="privacy_policy.html"><b>Privacy & Policy</b></a><br>
+  <a href="privacy_policy.html"><input type="submit"></a>
+  <label for="reset">
+  </label>
+  <a href="#"><input type="reset" id="reset" name="reset"></a><br>
+</form>
+</main>
+</body>
+</html>
